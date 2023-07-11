@@ -16,13 +16,14 @@ namespace QCS.Domain.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AgentLogin = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullNameAR = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    FullNameLT = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    ElieTest = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Active = table.Column<bool>(type: "bit", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    JobType = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    TeamId = table.Column<bool>(type: "bit", maxLength: 150, nullable: false),
                     PasswordToken = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

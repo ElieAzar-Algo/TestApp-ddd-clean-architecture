@@ -11,18 +11,22 @@ namespace QCS.Domain.Entities
   {
     [Key]
     public int Id { get; set; }
-    [Required]
-    public string AgentLogin { get; set; }
+    [Required, MaxLength(150)]
+     public string ElieTest { get; set; }
     [MaxLength(150)]
-    public string FullNameAR { get; set; }
-    [MaxLength(150)]
-    public string FullNameLT { get; set; }
+    public string FullName { get; set; }
     [MaxLength(150)]
     public string Email { get; set; }
-    public string Password { get; set; }
-    public string Image { get; set; }
-    [DefaultValue(true)]
-    public bool Active { get; set; }
+    [MaxLength(150)]
+    public string UserId { get; set; }
+    [MaxLength(150)]
+    public string Role { get; set; }
+    [MaxLength(150)]
+    public string Status { get; set; }
+    [MaxLength(150)]
+    public string JobType { get; set; }
+    [MaxLength(150)]
+    public bool TeamId { get; set; }
     public string PasswordToken { get; set; }
   
   }
